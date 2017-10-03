@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/home/jalberto/data/workspaces/ccb/ccb/WebContent" targetInArchive="/"/>
+    <dir sourceOnDisk="/home/jalberto/data/workspaces/ccb/ccb/build/classes" targetInArchive="/WEB-INF/classes"/>
+</archive>

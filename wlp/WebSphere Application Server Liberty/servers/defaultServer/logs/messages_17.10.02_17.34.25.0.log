@@ -1,0 +1,45 @@
+********************************************************************************
+product = WebSphere Application Server 17.0.0.2 (wlp-1.0.17.cl170220170523-1818)
+wlp.install.dir = /home/jalberto/software/wlp/
+java.home = /opt/ibm/TeamConcert/jdk/jre
+java.version = 1.7.0
+java.runtime = Java(TM) SE Runtime Environment (pxa6470sr9fp40-20160422_01 (SR9 FP40))
+os = Linux (3.10.0-514.10.2.el7.x86_64; amd64) (en_US)
+process = 17898@oc7055728731.ibm.com
+********************************************************************************
+[10/2/17 14:48:16:736 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[10/2/17 14:48:16:746 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/17.0.0.2/lafiles/en.html
+[10/2/17 14:48:17:654 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.053 seconds
+[10/2/17 14:48:17:666 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[10/2/17 14:48:18:284 BRT] 00000017 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[10/2/17 14:48:18:466 BRT] 00000017 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[10/2/17 14:48:18:544 BRT] 00000023 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost.localdomain  (IPv4: 127.0.0.1) port 9080.
+[10/2/17 14:48:18:953 BRT] 00000017 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[10/2/17 14:48:19:235 BRT] 00000028 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.307 seconds.
+[10/2/17 14:48:19:574 BRT] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[10/2/17 14:48:19:575 BRT] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[10/2/17 14:48:19:576 BRT] 00000017 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[10/2/17 14:48:19:683 BRT] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 14:48:21:335 BRT] 00000029 org.jboss.weld.Version                                       I WELD-000900: 2.4.3 (Final)
+[10/2/17 14:48:32:971 BRT] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[10/2/17 14:48:32:980 BRT] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 14:48:32:982 BRT] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 14:48:32:982 BRT] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/ccb/
+[10/2/17 14:48:32:984 BRT] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application ccb started in 13.301 seconds.
+[10/2/17 14:48:33:003 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [localConnector-1.0, webProfile-7.0, jaxrs-2.0, appSecurity-2.0, json-1.0, jpa-2.1, cdi-1.2, jaxrsClient-2.0, distributedMap-1.0, websocket-1.1, el-3.0, beanValidation-1.1, ssl-1.0, jdbc-4.1, managedBeans-1.0, jpaContainer-2.1, servlet-3.1, jsf-2.2, jsp-2.3, jndi-1.0, jsonp-1.0, ejbLite-3.2].
+[10/2/17 14:48:33:003 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 15.349 seconds.
+[10/2/17 14:48:33:003 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[10/2/17 14:48:33:079 BRT] 00000028 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 14:48:33:184 BRT] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 14:48:33:192 BRT] 00000034 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 14:48:33:420 BRT] 00000034 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[10/2/17 14:48:34:223 BRT] 00000028 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 15:02:22:174 BRT] 000000f6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[10/2/17 15:02:22:179 BRT] 000000f7 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host localhost.localdomain  (IPv4: 127.0.0.1) port 9080.
+[10/2/17 15:02:22:179 BRT] 000000f7 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/ccb/
+[10/2/17 15:02:22:181 BRT] 000000f6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[10/2/17 15:02:22:209 BRT] 000000f3 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 15:02:22:220 BRT] 000000f3 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 15:02:22:495 BRT] 000000f6 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[10/2/17 15:02:22:513 BRT] 000000f6 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[10/2/17 15:02:22:810 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 14 minutes, 6.209 seconds.

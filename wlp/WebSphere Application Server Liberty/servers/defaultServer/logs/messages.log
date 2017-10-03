@@ -1,0 +1,376 @@
+********************************************************************************
+product = WebSphere Application Server 17.0.0.2 (wlp-1.0.17.cl170220170523-1818)
+wlp.install.dir = /home/jalberto/software/wlp/
+java.home = /opt/ibm/TeamConcert/jdk/jre
+java.version = 1.7.0
+java.runtime = Java(TM) SE Runtime Environment (pxa6470sr9fp40-20160422_01 (SR9 FP40))
+os = Linux (3.10.0-514.10.2.el7.x86_64; amd64) (en_US)
+process = 3502@oc7055728731.ibm.com
+********************************************************************************
+[10/2/17 17:34:25:166 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[10/2/17 17:34:25:196 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/17.0.0.2/lafiles/en.html
+[10/2/17 17:34:26:824 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.854 seconds
+[10/2/17 17:34:26:839 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[10/2/17 17:34:27:937 BRT] 00000017 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[10/2/17 17:34:28:267 BRT] 00000017 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[10/2/17 17:34:28:634 BRT] 00000025 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[10/2/17 17:34:29:246 BRT] 00000017 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[10/2/17 17:34:29:603 BRT] 00000020 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.387 seconds.
+[10/2/17 17:34:30:186 BRT] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[10/2/17 17:34:30:188 BRT] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[10/2/17 17:34:30:188 BRT] 00000017 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[10/2/17 17:34:30:326 BRT] 00000020 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:34:32:670 BRT] 00000020 org.jboss.weld.Version                                       I WELD-000900: 2.4.3 (Final)
+[10/2/17 17:34:49:036 BRT] 00000020 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[10/2/17 17:34:49:047 BRT] 00000020 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:34:49:048 BRT] 00000020 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:34:49:049 BRT] 00000020 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:34:49:053 BRT] 00000020 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application ccb started in 18.727 seconds.
+[10/2/17 17:34:49:075 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [localConnector-1.0, webProfile-7.0, jaxrs-2.0, appSecurity-2.0, json-1.0, jpa-2.1, cdi-1.2, jaxrsClient-2.0, distributedMap-1.0, websocket-1.1, el-3.0, beanValidation-1.1, ssl-1.0, jdbc-4.1, managedBeans-1.0, jpaContainer-2.1, servlet-3.1, jsf-2.2, jsp-2.3, jndi-1.0, jsonp-1.0, ejbLite-3.2].
+[10/2/17 17:34:49:075 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 22.251 seconds.
+[10/2/17 17:34:49:075 BRT] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[10/2/17 17:34:49:165 BRT] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:34:49:184 BRT] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:34:49:337 BRT] 00000022 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:34:49:364 BRT] 00000029 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[10/2/17 17:35:44:242 BRT] 00000033 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Initialization successful.
+[10/2/17 17:35:44:309 BRT] 00000033 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 17:35:51:973 BRT] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 17:37:57:233 BRT] 00000034 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:37:57:234 BRT] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 17:37:57:235 BRT] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 17:37:57:235 BRT] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Destroy successful.
+[10/2/17 17:37:57:310 BRT] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:37:57:329 BRT] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:37:57:777 BRT] 00000020 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:38:10:549 BRT] 00000034 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:38:10:549 BRT] 00000034 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:38:10:550 BRT] 00000034 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:38:10:555 BRT] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 13.226 seconds.
+[10/2/17 17:38:10:607 BRT] 00000037 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:38:10:607 BRT] 00000037 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:38:10:925 BRT] 00000042 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:39:30:453 BRT] 0000003e com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:39:30:475 BRT] 0000003e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:39:30:486 BRT] 0000003e com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:39:30:685 BRT] 00000048 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:39:43:364 BRT] 0000003e com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:39:43:364 BRT] 0000003e com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:39:43:365 BRT] 0000003e com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:39:43:369 BRT] 0000003e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 12.883 seconds.
+[10/2/17 17:39:43:481 BRT] 0000003c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:39:43:481 BRT] 0000003c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:39:43:598 BRT] 00000053 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:39:50:572 BRT] 00000042 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Initialization successful.
+[10/2/17 17:39:50:614 BRT] 00000042 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 17:39:57:718 BRT] 00000055 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 17:40:45:118 BRT] 00000058 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:40:45:118 BRT] 00000058 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 17:40:45:119 BRT] 00000058 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 17:40:45:119 BRT] 00000058 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Destroy successful.
+[10/2/17 17:40:45:128 BRT] 00000058 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:40:45:134 BRT] 00000058 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:40:45:350 BRT] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:40:56:224 BRT] 00000058 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:40:56:224 BRT] 00000058 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:40:56:224 BRT] 00000058 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:40:56:225 BRT] 00000058 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.091 seconds.
+[10/2/17 17:40:56:309 BRT] 00000057 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:40:56:309 BRT] 00000057 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:40:56:432 BRT] 00000053 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:41:40:675 BRT] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 17:44:25:024 BRT] 0000006e com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:44:25:024 BRT] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 17:44:25:033 BRT] 0000006e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:44:25:040 BRT] 0000006e com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:44:25:245 BRT] 00000034 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:44:39:041 BRT] 0000006e com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:44:39:041 BRT] 0000006e com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:44:39:042 BRT] 0000006e com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:44:39:043 BRT] 0000006e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 14.003 seconds.
+[10/2/17 17:44:39:147 BRT] 00000078 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:44:39:147 BRT] 00000078 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:44:39:447 BRT] 00000034 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:45:07:457 BRT] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Initialization successful.
+[10/2/17 17:45:07:486 BRT] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 17:45:13:670 BRT] 0000006c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 17:46:28:519 BRT] 0000006c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:46:28:520 BRT] 0000006c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 17:46:28:520 BRT] 0000006c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 17:46:28:520 BRT] 0000006c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Destroy successful.
+[10/2/17 17:46:28:534 BRT] 0000006c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:46:28:543 BRT] 0000006c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:46:28:744 BRT] 0000004e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:46:40:450 BRT] 0000006c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:46:40:450 BRT] 0000006c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:46:40:451 BRT] 0000006c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:46:40:451 BRT] 0000006c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.908 seconds.
+[10/2/17 17:46:40:517 BRT] 00000053 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:46:40:517 BRT] 00000053 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:46:40:667 BRT] 0000007e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:52:25:680 BRT] 0000003c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Initialization successful.
+[10/2/17 17:52:25:711 BRT] 0000003c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 17:52:32:654 BRT] 00000094 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 17:54:35:789 BRT] 0000003c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:54:35:789 BRT] 0000003c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 17:54:35:789 BRT] 0000003c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 17:54:35:789 BRT] 0000003c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Destroy successful.
+[10/2/17 17:54:35:804 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:54:35:810 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:54:36:023 BRT] 000000ca com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:54:47:699 BRT] 0000003c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:54:47:699 BRT] 0000003c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:54:47:699 BRT] 0000003c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:54:47:701 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.891 seconds.
+[10/2/17 17:54:47:758 BRT] 000000ca com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:54:47:758 BRT] 000000ca com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:54:47:917 BRT] 000000ce com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:56:24:730 BRT] 000000e0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:56:24:747 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:56:24:838 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:56:24:956 BRT] 0000003c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:56:38:653 BRT] 000000e0 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:56:38:653 BRT] 000000e0 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:56:38:653 BRT] 000000e0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:56:38:656 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 13.818 seconds.
+[10/2/17 17:56:38:768 BRT] 000000d5 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:56:38:768 BRT] 000000d5 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:56:38:865 BRT] 00000094 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:56:39:459 BRT] 000000e0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:56:39:471 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:56:39:493 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:56:39:689 BRT] 00000094 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:56:51:952 BRT] 000000e0 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:56:51:952 BRT] 000000e0 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:56:51:952 BRT] 000000e0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:56:51:953 BRT] 000000e0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 12.460 seconds.
+[10/2/17 17:56:52:347 BRT] 000000e5 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:56:52:348 BRT] 000000e5 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:56:52:508 BRT] 0000003c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:58:24:031 BRT] 00000094 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:58:24:046 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:58:24:052 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:58:24:309 BRT] 000000e6 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:58:35:385 BRT] 00000094 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:58:35:385 BRT] 00000094 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:58:35:385 BRT] 00000094 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:58:35:385 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.333 seconds.
+[10/2/17 17:58:35:449 BRT] 000000ed com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:58:35:450 BRT] 000000ed com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:58:35:719 BRT] 000000e9 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:59:06:517 BRT] 000000ef com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:59:06:525 BRT] 000000ef com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:59:06:533 BRT] 000000ef com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:59:06:731 BRT] 000000d5 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:59:17:194 BRT] 000000ef com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:59:17:194 BRT] 000000ef com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:59:17:194 BRT] 000000ef com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:59:17:194 BRT] 000000ef com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 10.661 seconds.
+[10/2/17 17:59:17:266 BRT] 0000006c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:59:17:266 BRT] 0000006c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:59:17:406 BRT] 000000d5 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:59:19:568 BRT] 000000d5 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:59:19:575 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:59:19:582 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:59:19:780 BRT] 0000003c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:59:31:196 BRT] 000000d5 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 17:59:31:197 BRT] 000000d5 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 17:59:31:197 BRT] 000000d5 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:59:31:197 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.615 seconds.
+[10/2/17 17:59:31:262 BRT] 000000f0 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 17:59:31:262 BRT] 000000f0 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 17:59:31:414 BRT] 0000006c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 17:59:49:132 BRT] 000000f5 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Initialization successful.
+[10/2/17 17:59:49:599 BRT] 000000f5 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 17:59:57:601 BRT] 000000d5 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 17:59:57:601 BRT] 000000d5 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 17:59:57:602 BRT] 000000d5 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.CCBServlet]: Destroy successful.
+[10/2/17 17:59:57:608 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 17:59:57:615 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 17:59:57:816 BRT] 000000f0 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:00:09:473 BRT] 000000d5 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:00:09:474 BRT] 000000d5 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:00:09:474 BRT] 000000d5 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:00:09:474 BRT] 000000d5 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.859 seconds.
+[10/2/17 18:00:09:543 BRT] 000000f0 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:00:09:544 BRT] 000000f0 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:00:09:681 BRT] 000000f6 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:00:36:627 BRT] 0000003c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:00:36:637 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:00:36:646 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:00:36:847 BRT] 000000fc com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:00:47:752 BRT] 0000003c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:00:47:752 BRT] 0000003c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:00:47:752 BRT] 0000003c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:00:47:754 BRT] 0000003c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.108 seconds.
+[10/2/17 18:00:47:827 BRT] 000000f6 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:00:47:827 BRT] 000000f6 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:00:50:501 BRT] 000000f0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:00:50:509 BRT] 000000f0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:00:50:513 BRT] 000000f0 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:00:53:302 BRT] 00000102 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:00:53:791 BRT] 0000003c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:01:04:970 BRT] 000000f0 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:01:04:970 BRT] 000000f0 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:01:04:970 BRT] 000000f0 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:01:04:972 BRT] 000000f0 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 14.459 seconds.
+[10/2/17 18:01:05:054 BRT] 000000f5 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:01:05:054 BRT] 000000f5 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:01:05:291 BRT] 00000094 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:01:18:468 BRT] 000000d5 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 18:01:18:555 BRT] 000000d5 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 18:02:04:590 BRT] 00000094 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:02:04:591 BRT] 00000094 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 18:02:04:591 BRT] 00000094 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 18:02:04:607 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:02:04:613 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:02:04:939 BRT] 000000d5 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:02:16:598 BRT] 00000094 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:02:16:599 BRT] 00000094 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:02:16:599 BRT] 00000094 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:02:16:599 BRT] 00000094 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.986 seconds.
+[10/2/17 18:02:16:668 BRT] 0000003c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:02:16:668 BRT] 0000003c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:02:16:997 BRT] 00000102 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:02:28:867 BRT] 0000010f com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 18:02:28:905 BRT] 0000010f com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 18:11:40:150 BRT] 00000116 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:11:40:151 BRT] 00000116 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 18:11:40:151 BRT] 00000116 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 18:11:40:160 BRT] 00000116 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:11:40:168 BRT] 00000116 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:11:40:369 BRT] 0000014d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:11:50:852 BRT] 00000116 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:11:50:852 BRT] 00000116 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:11:50:852 BRT] 00000116 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:11:50:854 BRT] 00000116 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 10.686 seconds.
+[10/2/17 18:11:50:936 BRT] 0000014b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:11:50:936 BRT] 0000014b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:11:51:064 BRT] 00000140 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:12:44:570 BRT] 0000012b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:12:44:579 BRT] 0000012b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:12:44:585 BRT] 0000012b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:12:44:794 BRT] 0000014b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:12:56:049 BRT] 0000012b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:12:56:049 BRT] 0000012b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:12:56:049 BRT] 0000012b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:12:56:051 BRT] 0000012b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.466 seconds.
+[10/2/17 18:12:56:121 BRT] 00000157 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:12:56:121 BRT] 00000157 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:12:56:258 BRT] 0000014b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:24:57:253 BRT] 000001a9 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:24:57:265 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:24:57:272 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:24:57:718 BRT] 000001a1 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:25:09:329 BRT] 000001a9 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:25:09:329 BRT] 000001a9 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:25:09:329 BRT] 000001a9 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:25:09:332 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 12.060 seconds.
+[10/2/17 18:25:09:412 BRT] 000001b3 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:25:09:412 BRT] 000001b3 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:25:09:633 BRT] 000001aa com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:30:47:543 BRT] 000001c8 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:30:47:555 BRT] 000001c8 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:30:47:559 BRT] 000001c8 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:30:47:765 BRT] 000001c9 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:30:58:555 BRT] 000001c8 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:30:58:555 BRT] 000001c8 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:30:58:555 BRT] 000001c8 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:30:58:555 BRT] 000001c8 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 10.996 seconds.
+[10/2/17 18:30:58:660 BRT] 000001c9 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:30:58:661 BRT] 000001c9 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:30:58:763 BRT] 00000189 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:34:06:899 BRT] 00000189 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:34:06:920 BRT] 00000189 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:34:06:932 BRT] 00000189 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:34:07:128 BRT] 00000157 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:34:17:934 BRT] 00000189 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:34:17:934 BRT] 00000189 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:34:17:934 BRT] 00000189 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:34:17:935 BRT] 00000189 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.003 seconds.
+[10/2/17 18:34:17:990 BRT] 000001b6 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:34:17:990 BRT] 000001b6 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:34:18:143 BRT] 000001d6 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:35:00:896 BRT] 000001d6 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:35:00:905 BRT] 000001d6 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:35:00:911 BRT] 000001d6 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:35:01:137 BRT] 000001d2 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:35:12:434 BRT] 000001d6 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:35:12:434 BRT] 000001d6 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:35:12:434 BRT] 000001d6 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:35:12:437 BRT] 000001d6 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.526 seconds.
+[10/2/17 18:35:12:500 BRT] 000001d2 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:35:12:500 BRT] 000001d2 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:35:12:639 BRT] 00000157 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:36:43:771 BRT] 00000157 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:36:43:777 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:36:43:786 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:36:43:982 BRT] 000001d6 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:36:55:328 BRT] 00000157 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:36:55:328 BRT] 00000157 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:36:55:328 BRT] 00000157 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:36:55:329 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.543 seconds.
+[10/2/17 18:36:55:372 BRT] 000001d6 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:36:55:373 BRT] 000001d6 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:36:55:789 BRT] 000001a9 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:38:07:553 BRT] 000001a9 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:38:07:563 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:38:07:568 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:38:07:772 BRT] 00000157 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:38:21:543 BRT] 000001a9 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:38:21:544 BRT] 000001a9 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:38:21:544 BRT] 000001a9 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:38:21:544 BRT] 000001a9 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 13.976 seconds.
+[10/2/17 18:38:21:615 BRT] 000001d6 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:38:21:616 BRT] 000001d6 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:38:21:753 BRT] 000001a1 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:39:52:409 BRT] 000001a1 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 18:39:52:435 BRT] 000001a1 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 18:41:25:151 BRT] 0000021b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:41:25:151 BRT] 0000021b com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 18:41:25:151 BRT] 0000021b com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 18:41:25:159 BRT] 0000021b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:41:25:176 BRT] 0000021b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:41:25:371 BRT] 00000200 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:41:36:068 BRT] 0000021b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:41:36:068 BRT] 0000021b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:41:36:068 BRT] 0000021b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:41:36:069 BRT] 0000021b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 10.893 seconds.
+[10/2/17 18:41:36:114 BRT] 000001f8 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:41:36:114 BRT] 000001f8 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:41:36:278 BRT] 00000200 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:42:09:952 BRT] 00000157 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:42:09:959 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:42:09:968 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:42:10:175 BRT] 0000022e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:42:21:551 BRT] 00000157 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:42:21:552 BRT] 00000157 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:42:21:552 BRT] 00000157 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:42:21:552 BRT] 00000157 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.584 seconds.
+[10/2/17 18:42:21:609 BRT] 0000020f com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:42:21:609 BRT] 0000020f com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:42:21:790 BRT] 0000021b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:43:18:582 BRT] 00000241 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:43:18:589 BRT] 00000241 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:43:18:596 BRT] 00000241 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application ccb.
+[10/2/17 18:43:18:885 BRT] 00000234 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:43:30:444 BRT] 00000241 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ccb.
+[10/2/17 18:43:30:444 BRT] 00000241 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ccb has been bound to default_host.
+[10/2/17 18:43:30:444 BRT] 00000241 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:43:30:444 BRT] 00000241 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application ccb updated in 11.848 seconds.
+[10/2/17 18:43:30:483 BRT] 00000245 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ccb
+[10/2/17 18:43:30:483 BRT] 00000245 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/2/17 18:43:30:871 BRT] 00000200 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/jalberto/software/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[10/2/17 18:43:47:838 BRT] 00000200 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /CCBServlet
+[10/2/17 18:43:58:564 BRT] 00000234 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [/index.jsp]: Initialization successful.
+[10/2/17 18:44:05:071 BRT] 00000157 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Initialization successful.
+[10/2/17 18:45:02:448 BRT] 00000253 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[10/2/17 18:45:02:454 BRT] 00000254 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[10/2/17 18:45:02:455 BRT] 00000254 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.139:9080/ccb/
+[10/2/17 18:45:02:459 BRT] 00000253 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[10/2/17 18:45:02:489 BRT] 00000251 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [ccb.servlet.UploadServlet]: Destroy successful.
+[10/2/17 18:45:02:490 BRT] 00000251 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [ccb] [/ccb] [/index.jsp]: Destroy successful.
+[10/2/17 18:45:02:502 BRT] 00000251 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application ccb has stopped successfully.
+[10/2/17 18:45:02:785 BRT] 00000253 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[10/2/17 18:45:02:804 BRT] 00000253 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[10/2/17 18:45:03:086 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 1 hours, 10 minutes, 38.117 seconds.

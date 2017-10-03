@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2    9/20/17 16:45:17:053 BRT    9/20/17 16:49:29:328 BRT java.lang.UnsupportedOperationException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /home/jalberto/software/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.09.20_16.45.17.0.log
+------+------+---------------------------+---------------------------+---------------------------

@@ -1,0 +1,25 @@
+com.ibm.ws.kernel.boot.LocationException: Not Found /home/jalberto/software/wlp/usr/servers/defaultServer/server.xml
+	at com.ibm.ws.kernel.boot.BootstrapConfig.verifyProcess(BootstrapConfig.java:891)
+	at com.ibm.ws.kernel.boot.Launcher.createPlatform(Launcher.java:101)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:60)
+	at com.ibm.ws.kernel.boot.cmdline.EnvCheck.main(EnvCheck.java:36)
+                 Java home:  /opt/ibm/TeamConcert/jdk/jre
+              Install root:  /home/jalberto/software/wlp/
+          System libraries:  /home/jalberto/software/wlp/lib/
+                 User root:  /home/jalberto/software/wlp/usr/
+                    Config:  /home/jalberto/software/wlp/usr/servers/defaultServer/
+                    Output:  /home/jalberto/software/wlp/usr/servers/defaultServer/
+
+
+arg0=defaultServer
+arg1=--pid=
+arg2=--stop
+exit=23
+
+                 Java home:  /opt/ibm/TeamConcert/jdk/jre
+              Install root:  /home/jalberto/software/wlp/
+          System libraries:  /home/jalberto/software/wlp/lib/
+                 User root:  /home/jalberto/software/wlp/usr/
+                    Config:  /home/jalberto/software/wlp/usr/servers/defaultServer/
+                    Output:  /home/jalberto/software/wlp/usr/servers/defaultServer/
+

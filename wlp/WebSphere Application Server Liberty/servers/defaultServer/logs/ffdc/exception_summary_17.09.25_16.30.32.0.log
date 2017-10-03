@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    9/25/17 16:30:32:683 BRT    9/25/17 16:30:32:683 BRT java.lang.ArrayIndexOutOfBoundsException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /home/jalberto/software/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.09.25_16.30.32.0.log
+------+------+---------------------------+---------------------------+---------------------------
