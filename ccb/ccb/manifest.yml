@@ -1,0 +1,6 @@
+---
+applications:
+- name: ccb
+  memory: 512M
+  host: ccb
+  domain: mybluemix.net
