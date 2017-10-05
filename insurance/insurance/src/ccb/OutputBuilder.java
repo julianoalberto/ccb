@@ -32,6 +32,22 @@ public class OutputBuilder {
 	public static final String SHEET_JD_ANDRADE = "Bairro 2";
 	public static final String SHEET_JD_TRIUNFO = "Bairro 3";
 	
+	public static final int LOCAL_NAME_ROW = 1;
+	public static final int LOCAL_NAME_COLUMN = 3;
+	
+	public static final int CNPJ_ROW = 3;
+	public static final int CNPJ_COLUMN = 1;
+	
+	public static final int RESPONSIBLE_ROW = 1;
+	public static final int RESPONSIBLE_COLUMN = 9;
+	
+	public static final int RESPONSIBLE_PHONE_ROW = 1;
+	public static final int RESPONSIBLE_PHONE_COLUMN = 15;
+	
+	public static final int ADMINISTRATION_ROW = 2;
+	public static final int ADMINISTRATION_COLUMN = 3;
+	
+	
 	public static final int FIRST_ROW = 6;
 	public static final int MONTH_ROW = 3;
 	
@@ -140,6 +156,8 @@ public class OutputBuilder {
 		Cell monthCell = monthRow.getCell(MONTH_COLUMN);
 		monthCell.setCellValue(cal.getTime());
 		
+		buildHeader(local, sheet);
+		
 		int row = FIRST_ROW;
 		for (Person person : orderedKeys) {
 			ArrayList<Record> records = byPerson.get(person);
@@ -182,6 +200,30 @@ public class OutputBuilder {
 			row++;
 			
 		}		
+	}
+	
+	private void buildHeader(Local local, HSSFSheet sheet)
+	{
+		Row rowName = sheet.getRow(LOCAL_NAME_ROW);
+		Cell cellName = rowName.getCell(LOCAL_NAME_COLUMN);
+		cellName.setCellValue(local.getName());
+		
+		Row rowAdm = sheet.getRow(ADMINISTRATION_ROW);
+		Cell cellAdm = rowAdm.getCell(ADMINISTRATION_COLUMN);
+		cellAdm.setCellValue(local.getAdministration()); 
+		
+		Row rowCnpj = sheet.getRow(CNPJ_ROW);
+		Cell cellCnpj = rowCnpj.getCell(CNPJ_COLUMN);
+		cellCnpj.setCellValue(local.getCnpj()); 
+		
+		Row rowResp = sheet.getRow(RESPONSIBLE_ROW);
+		Cell cellResp = rowResp.getCell(RESPONSIBLE_COLUMN);
+		cellResp.setCellValue(local.getResponsible());
+		
+		Row rowRespPhone = sheet.getRow(RESPONSIBLE_PHONE_ROW);
+		Cell cellRespPhone = rowRespPhone.getCell(RESPONSIBLE_PHONE_COLUMN);
+		cellRespPhone.setCellValue(local.getResponsiblePhone());
+		
 	}
 	
 	private String[] getArrayOfDays(ArrayList<Record> records, int month)

@@ -2,6 +2,11 @@ package ccb.model;
 
 public class Local {
 	private String code;
+	private String name;
+	private String cnpj;
+	private String administration;
+	private String responsible;
+	private String responsiblePhone;
 	
 	public Local(String code)
 	{
@@ -58,6 +63,46 @@ public class Local {
 	@Override
 	public int hashCode() {
 		return code.hashCode();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getAdministration() {
+		return administration;
+	}
+
+	public void setAdministration(String administration) {
+		this.administration = administration;
+	}
+
+	public String getResponsible() {
+		return responsible;
+	}
+
+	public void setResponsible(String responsible) {
+		this.responsible = responsible;
+	}
+
+	public String getResponsiblePhone() {
+		return responsiblePhone;
+	}
+
+	public void setResponsiblePhone(String responsiblePhone) {
+		this.responsiblePhone = responsiblePhone;
 	}
 	
 	

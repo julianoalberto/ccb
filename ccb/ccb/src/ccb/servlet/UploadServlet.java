@@ -34,17 +34,11 @@ public class UploadServlet extends HttpServlet {
 	public static final String PARAM_FILE = "file";
 	
 	public static final String PARAM_LOCAL_PREFIX = "local_";
-	public static final String PARAM_LOCAL_1 = "local_1";
-	public static final String PARAM_LOCAL_2 = "local_2";
-	public static final String PARAM_LOCAL_3 = "local_3";
-	public static final String PARAM_LOCAL_4 = "local_4";
-	public static final String PARAM_LOCAL_5 = "local_5";
-	public static final String PARAM_LOCAL_6 = "local_6";
-	public static final String PARAM_LOCAL_7 = "local_7";
-	public static final String PARAM_LOCAL_8 = "local_8";
-	public static final String PARAM_LOCAL_9 = "local_9";
-	public static final String PARAM_LOCAL_10 = "local_10";
-	
+	public static final String PARAM_LOCAL_NAME_PREFIX = "local_name_";
+	public static final String PARAM_ADM_PREFIX = "adm_";
+	public static final String PARAM_CNPJ_PREFIX = "cnpj_";
+	public static final String PARAM_RESP_PREFIX = "resp_";
+	public static final String PARAM_RESP_PHONEL_PREFIX = "resp_phone_";
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -108,6 +102,11 @@ public class UploadServlet extends HttpServlet {
 				if (localString != null && localString.length() > 0)
 				{
 					Local local = new Local(localString);
+					local.setName(paramMap.get(PARAM_LOCAL_NAME_PREFIX + i)[0]);
+					local.setAdministration(paramMap.get(PARAM_ADM_PREFIX + i)[0]);
+					local.setCnpj(paramMap.get(PARAM_CNPJ_PREFIX + i)[0]);
+					local.setResponsible(paramMap.get(PARAM_RESP_PREFIX + i)[0]);
+					local.setResponsiblePhone(paramMap.get(PARAM_RESP_PHONEL_PREFIX + i)[0]);
 					locals.put(local, "Bairro " + i);
 				}
 			}
