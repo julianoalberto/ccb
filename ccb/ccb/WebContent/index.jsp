@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="version" content="20171005_1">
 <title>CCB</title>
 </head>
 <body>

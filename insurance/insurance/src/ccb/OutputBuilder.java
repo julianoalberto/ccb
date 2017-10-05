@@ -185,7 +185,7 @@ public class OutputBuilder {
 		
 		for (int i = 0; i < maxDaysInMonth; i++)
 		{
-			days[i] = "";
+			days[i] = null;
 		}
 					
 		for (Record record : records) {
