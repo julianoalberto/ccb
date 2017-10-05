@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="version" content="20171005_1">
+<meta name="version" content="20171005_4">
 <title>CCB</title>
 </head>
 <body>
@@ -50,6 +50,111 @@
 			    			Aqui:
 			    			
 			    			<ol>
+				    			<li>
+				    				Digite o código de cada igreja que estará na planilha. Use o código completo, incluindo o traço: <br />
+				    				<table>
+					    				<tr>
+					    					<td>
+					    						Bairro 1:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_1" value="22-2413"/>
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 2:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_2" value="22-1649" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 3:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_3" value="22-3696" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 4:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_4" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 5:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_5" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 6:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_6" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 7:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_7" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 8:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_8" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 9:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_9" />
+					    					</td>
+					    				</tr>
+					    				
+					    				<tr>
+					    					<td>
+					    						Bairro 10:
+					    					</td>
+					    					
+					    					<td>
+					    						<input type="text" name="local_10" />
+					    					</td>
+					    				</tr>				    								    				
+				    				</table>
+				    			</li>
+				    			
 				    			<li>
 				    				Selecione o mês dos apontamentos: <br />
 				    				<select name="month">

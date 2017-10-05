@@ -70,6 +70,15 @@ public class OutputBuilder {
 		sheetNames.put(new Local("22-1649"), SHEET_JD_ANDRADE);
 		sheetNames.put(new Local("22-3696"), SHEET_JD_TRIUNFO);
 	}
+	
+	public OutputBuilder(InputStream inputBytes, int month, String templateFileName, HashMap<Local, String> sheetNames)
+	{
+		this.dao = new InsuranceDAO(inputBytes);
+		this.month = month;
+		this.templateFileName = templateFileName;		
+		
+		this.sheetNames = sheetNames;
+	}
 
 	public void buildSpreadSheetOuput(String outputFileName) throws IOException, ParseException
 	{
