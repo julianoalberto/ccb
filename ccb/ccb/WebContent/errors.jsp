@@ -17,7 +17,7 @@
 		<td>
 			<div>
 				<div id="errorDiv" style="color:#FF0000">
-					<ol>
+					<ul>
 						<% 
 							ArrayList<String> errors = (ArrayList<String>) request.getAttribute("errors");
 							for(String error : errors)
@@ -30,7 +30,7 @@
 							</li>
 							
 						<% } %>
-					</ol>
+					</ul>
 				</div>
 							
 			</div>
