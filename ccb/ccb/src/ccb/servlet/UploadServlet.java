@@ -95,7 +95,7 @@ public class UploadServlet extends HttpServlet {
 		}
 		else
 		{
-			errors.add("Selecione um arquivo");
+			errors.add("Selecione um arquivo gerado pelo SIGA.");
 		}
 		
 		if (!errors.isEmpty())
