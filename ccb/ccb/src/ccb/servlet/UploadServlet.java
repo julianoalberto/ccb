@@ -3,6 +3,7 @@ package ccb.servlet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -60,31 +61,48 @@ public class UploadServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Part filePart = request.getPart(PARAM_FILE);
-	    InputStream fileContent = filePart.getInputStream();
-	    String month = request.getParameter(PARAM_MONTH);
-	    
-	    String outputFileName = "Seguro_" + (Integer.parseInt(month) + 1) + ".xls";
-	    response.setContentType("application/xls");
-	    response.setHeader("Content-Disposition", "attachment; filename=\"" + outputFileName + "\"");
-	    
-	    HashMap<Local, String> locals = parseLocals(request);
-	    
-	    
-	    ServletOutputStream os = response.getOutputStream();
-        OutputBuilder o = new OutputBuilder(fileContent, Integer.parseInt(month), TEMPLATE_FILE_NAME, locals);
+		ArrayList<String> errors = new ArrayList<String>();
 		
-        try {
-			o.buildSpreadSheetOuput(os);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+				Part filePart = request.getPart(PARAM_FILE);
+		
+		if(filePart.getSize() > 0)
+		{
+			InputStream fileContent = filePart.getInputStream();
+			
+		    String month = request.getParameter(PARAM_MONTH);
+		    
+		    String outputFileName = "Seguro_" + (Integer.parseInt(month) + 1) + ".xls";
+		    response.setContentType("application/xls");
+		    response.setHeader("Content-Disposition", "attachment; filename=\"" + outputFileName + "\"");
+		    
+		    HashMap<Local, String> locals = parseLocals(request);
+		    
+		    
+		    ServletOutputStream os = response.getOutputStream();
+	        OutputBuilder o = new OutputBuilder(fileContent, Integer.parseInt(month), TEMPLATE_FILE_NAME, locals);
+			
+	        try {
+				o.buildSpreadSheetOuput(os);
+			} catch (Exception e) {
+				errors.add("Erro no arquivo de entrada: " + e.getMessage());
+				e.printStackTrace();
+			}
+			
+			fileContent.close();
+			
+		    os.flush();
+	        os.close();
+		}
+		else
+		{
+			errors.add("Selecione um arquivo");
 		}
 		
-		fileContent.close();
-		
-	    os.flush();
-        os.close();
+		if (!errors.isEmpty())
+		{
+			request.setAttribute("errors", errors);
+			request.getRequestDispatcher("errors.jsp").forward(request, response);
+		}
 	}
 	
 	private HashMap<Local, String> parseLocals(HttpServletRequest request)
