@@ -30,7 +30,7 @@ public class OutputBuilder {
 	
 	public static final String SHEET_CENTRO = "Bairro 1";
 	public static final String SHEET_JD_ANDRADE = "Bairro 2";
-	public static final String SHEET_JD_TRIUNFO = "Bairro 3";
+	public static final String SHEET_JD_TRIUNFO = "Bairro 9";
 	
 	public static final int LOCAL_NAME_ROW = 1;
 	public static final int LOCAL_NAME_COLUMN = 3;

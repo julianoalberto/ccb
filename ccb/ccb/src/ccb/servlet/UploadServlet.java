@@ -125,7 +125,16 @@ public class UploadServlet extends HttpServlet {
 					local.setCnpj(paramMap.get(PARAM_CNPJ_PREFIX + i)[0]);
 					local.setResponsible(paramMap.get(PARAM_RESP_PREFIX + i)[0]);
 					local.setResponsiblePhone(paramMap.get(PARAM_RESP_PHONEL_PREFIX + i)[0]);
-					locals.put(local, "Bairro " + i);
+					
+					// dirt tweak to fix a bug: sheet 9 has a space at the end ("Bairro 9 ")
+					if (i == 9)
+					{
+						locals.put(local, "Bairro " + i + " ");
+					}
+					else
+					{
+						locals.put(local, "Bairro " + i);
+					}
 				}
 			}
 		}	

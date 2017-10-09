@@ -17,6 +17,9 @@
 		<td>
 			<div>
 				<div id="errorDiv" style="color:#FF0000">
+					<h2>
+						Retorne e corrija os seguintes erros:
+					</h2>
 					<ul>
 						<% 
 							ArrayList<String> errors = (ArrayList<String>) request.getAttribute("errors");

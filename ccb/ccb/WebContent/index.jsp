@@ -13,7 +13,7 @@
 	<tr>
 		<td>
 			
-			No SIGA: <br />
+			No SIGA, após digitar e conferir os livros: <br />
 			<ol>
 				<li>
 					ADM > Voluntário > Apontamentos
@@ -24,6 +24,31 @@
 						<li> 
 							Localidade: * Todos *
 						</li>
+						<li> 
+							Data: 01/09/2017 30/09/2017		
+						</li>
+						<li> 
+							Consultar
+						</li> 
+					</ul>
+				</li>
+				<li>
+					Imprimir > Excel
+				</li>
+				<li>
+					Salvar localmente
+				</li>				
+			</ol>
+			
+			Ou:
+			
+			<ol>
+				<li>
+					Casa de oração > Voluntário > Apontamentos
+				</li>
+				<li>
+					Filtros
+					<ul>
 						<li> 
 							Data: 01/09/2017 30/09/2017		
 						</li>
@@ -51,7 +76,7 @@
 			    			
 			    			<ol>
 				    			<li>
-				    				Preencha os dados de cada igreja. Cada uma será uma aba na planilha do seguro: <br />
+				    				Preencha os dados de cada igreja. Cada linha abaixo será uma aba na planilha do seguro. Igrejas que estejam presentes no arquivo gerado pelo SIGA mas não estejam listadas abaixo, NÃO serão adicionadas à planilha do seguro: <br />
 				    				<table>
 					    				<tr>
 					    					<td>
