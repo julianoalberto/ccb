@@ -19,9 +19,6 @@ import ccb.model.Record;
 
 public class InsuranceDAO {
 	
-	static final int ROW_INCREMENT = 2;
-	static final int ROW_FIRST = 13;
-	
 	private String inputFileName;
 	
 	private InputStream inputBytes;
@@ -86,11 +83,16 @@ public class InsuranceDAO {
 		
 		HSSFWorkbook workbook = new HSSFWorkbook(data);
 		HSSFSheet sheet = workbook.getSheetAt(0);
-				
-		for (int i = ROW_FIRST; i <= (sheet.getLastRowNum() - 1); i += ROW_INCREMENT)
+		
+		for (int i = 0; i <= (sheet.getLastRowNum() - 1); i++)
 		{
 			HSSFRow row = sheet.getRow(i);
-			allRecords.add(XLSParser.parseRecord(row));			
+			Record record = XLSParser.parseRecord(row); 
+			
+			if (record != null)
+			{
+				allRecords.add(record);
+			}
 		}		
 		
 		workbook.close();
