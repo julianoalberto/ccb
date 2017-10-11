@@ -14,6 +14,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -26,12 +28,6 @@ import ccb.model.Person;
 import ccb.model.Record;
 
 public class OutputBuilder {
-	public final HashMap<Local, String> sheetNames;
-	
-	public static final String SHEET_CENTRO = "Bairro 1";
-	public static final String SHEET_JD_ANDRADE = "Bairro 2";
-	public static final String SHEET_JD_TRIUNFO = "Bairro 9";
-	
 	public static final int LOCAL_NAME_ROW = 1;
 	public static final int LOCAL_NAME_COLUMN = 3;
 	
@@ -59,68 +55,106 @@ public class OutputBuilder {
 	
 	public static final int PERSON_MAX_AGE = 70;
 	
+	public static final int FIRST_SHEET = 0;
+	public static final int LAST_SHEET = 9;
+	public static final int MAX_SHEET = LAST_SHEET + 1;
+	
 	InsuranceDAO dao;
 	int month;
 	String templateFileName;
-
+	
 	public OutputBuilder(String inputFileName, int month, String templateFileName)
 	{
 		this.dao = new InsuranceDAO(inputFileName);
 		this.month = month;
-		this.templateFileName = templateFileName;		
-		
-		sheetNames = new HashMap<Local, String>();
-		sheetNames.put(new Local("22-2413"), SHEET_CENTRO);
-		sheetNames.put(new Local("22-1649"), SHEET_JD_ANDRADE);
-		sheetNames.put(new Local("22-3696"), SHEET_JD_TRIUNFO);
+		this.templateFileName = templateFileName;
 	}
+	
 	
 	public OutputBuilder(InputStream inputBytes, int month, String templateFileName)
 	{
 		this.dao = new InsuranceDAO(inputBytes);
 		this.month = month;
-		this.templateFileName = templateFileName;		
-		
-		sheetNames = new HashMap<Local, String>();
-		sheetNames.put(new Local("22-2413"), SHEET_CENTRO);
-		sheetNames.put(new Local("22-1649"), SHEET_JD_ANDRADE);
-		sheetNames.put(new Local("22-3696"), SHEET_JD_TRIUNFO);
+		this.templateFileName = templateFileName;
 	}
 	
-	public OutputBuilder(InputStream inputBytes, int month, String templateFileName, HashMap<Local, String> sheetNames)
-	{
-		this.dao = new InsuranceDAO(inputBytes);
-		this.month = month;
-		this.templateFileName = templateFileName;		
-		
-		this.sheetNames = sheetNames;
-	}
-
 	public void buildSpreadSheetOuput(String outputFileName) throws IOException, ParseException
 	{
+		FileOutputStream out = new FileOutputStream(new File(outputFileName));
+		this.buildSpreadSheetOuput(out);
+        out.close();
+	}
+	
+	public void buildCompressedSpreadSheetOuput(String outputZipFileName) throws IOException, ParseException
+	{
+		FileOutputStream out = new FileOutputStream(new File(outputZipFileName));
+		this.buildCompressedSpreadSheetOuput(out);
+		out.close();
+	}
+	
+	
+	public void buildCompressedSpreadSheetOuput(OutputStream outputStream) throws IOException, ParseException
+	{
+		ZipOutputStream out = new ZipOutputStream(outputStream);
 		
-		FileInputStream modelo = new FileInputStream(new File(templateFileName));
-		HSSFWorkbook workbook = new HSSFWorkbook(modelo);
-		HashMap<Person, ArrayList<Record>> byPerson = null; 
-				
 		dao.load();
+		ArrayList<Local> locals = dao.getAllLocals();
+		
 		Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.MONTH, month);
 		cal.set(Calendar.DAY_OF_MONTH, 1);
 		
-		for (Local local : sheetNames.keySet()) {
-			byPerson = dao.getByLocal(local, PERSON_MAX_AGE);
-			buildSheet(byPerson, workbook, local, cal);
+		int sheetIndex = FIRST_SHEET;
+		int localIndex = 0;
+		int filesCount = getFilesCount(locals.size());
+		
+		for (int i = 0; i < filesCount; i++)
+		{
+			ZipEntry e = new ZipEntry("Seguro_" + (i + 1) + ".xls");
+			out.putNextEntry(e);
+			
+			FileInputStream modelo = new FileInputStream(new File(templateFileName));
+			HSSFWorkbook workbook = new HSSFWorkbook(modelo);
+			HashMap<Person, ArrayList<Record>> byPerson = null; 
+			
+			for (int j = localIndex; j < locals.size(); j++, localIndex++, sheetIndex++) {
+				Local local = locals.get(localIndex);
+				byPerson = dao.getByLocal(local, PERSON_MAX_AGE);
+				buildSheet(byPerson, workbook, sheetIndex, local, cal);
+				
+				if (sheetIndex == LAST_SHEET || localIndex == locals.size() - 1)
+				{
+					sheetIndex = FIRST_SHEET;
+					workbook.write(out);
+			        workbook.close();
+			        localIndex++;
+					break;
+				}
+			}		
+			out.closeEntry();
 		}
-		
-		
-		FileOutputStream out = 
-                new FileOutputStream(new File(outputFileName));
-        workbook.write(out);
-        workbook.close();
-        out.close();
+		out.close();
+		out.flush();
 	}
 	
+	/*
+	 * Calculate the number of XLS files based on the maximum number of sheets per file
+	 */
+	private int getFilesCount(int size) {
+		int a = size / MAX_SHEET;
+		if (a == 0)
+		{
+			return 1;
+		}
+		
+		if (size % MAX_SHEET > 0)
+		{
+			a++;
+		}
+		return a;
+	}
+
+
 	public void buildSpreadSheetOuput(OutputStream outputBytes) throws IOException, ParseException
 	{
 		
@@ -129,23 +163,36 @@ public class OutputBuilder {
 		HashMap<Person, ArrayList<Record>> byPerson = null; 
 				
 		dao.load();
+		ArrayList<Local> locals = dao.getAllLocals();
+		
 		Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.MONTH, month);
 		cal.set(Calendar.DAY_OF_MONTH, 1);
 		
-		for (Local local : sheetNames.keySet()) {
+		int sheetIndex = FIRST_SHEET;
+		
+		for (Local local : locals) {
 			byPerson = dao.getByLocal(local, PERSON_MAX_AGE);
-			buildSheet(byPerson, workbook, local, cal);
+			buildSheet(byPerson, workbook, sheetIndex, local, cal);
+			sheetIndex++;
+			if (sheetIndex > LAST_SHEET)
+			{
+				break;
+			}
 		}
 		
-		
 		workbook.write(outputBytes);
-        workbook.close();        
+        workbook.close();
 	}
 	
-	private void buildSheet(HashMap<Person, ArrayList<Record>> byPerson, HSSFWorkbook workbook, Local local, Calendar cal)
+	
+	
+	private void buildSheet(HashMap<Person, ArrayList<Record>> byPerson, HSSFWorkbook workbook, int sheetIndex, Local local, Calendar cal)
 	{
-		HSSFSheet sheet = workbook.getSheet(sheetNames.get(local));
+		System.out.println("Local: " + local.getCode());
+		System.out.println("sheetIndex: " + sheetIndex);
+		
+		HSSFSheet sheet = workbook.getSheetAt(sheetIndex);
 		Set<Person> keys = byPerson.keySet();
 		TreeSet<Person> orderedKeys = new TreeSet<Person>();
 		for (Person person : keys) {

@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Set;
 
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -24,6 +26,8 @@ public class InsuranceDAO {
 	private InputStream inputBytes;
 	
 	private ArrayList<Record> allRecords;
+	
+	private HashMap<String, Local> allLocals;
 	
 	public InsuranceDAO(String inputFileName)
 	{
@@ -70,6 +74,7 @@ public class InsuranceDAO {
 	public void load() throws IOException, ParseException
 	{
 		allRecords = new ArrayList<Record>();
+		allLocals = new HashMap<String, Local>();
 		InputStream data = null;
 		
 		if (inputFileName != null)
@@ -92,9 +97,25 @@ public class InsuranceDAO {
 			if (record != null)
 			{
 				allRecords.add(record);
+				allLocals.put(record.getLocal().getCode(), record.getLocal());
 			}
 		}		
 		
 		workbook.close();
+	}
+	
+	public ArrayList<Local> getAllLocals()
+	{
+		ArrayList<Local> locals = new ArrayList<Local>();
+		
+		Set<String> keys = allLocals.keySet();
+		
+		for (String key : keys) {
+			locals.add(allLocals.get(key));
+		}
+		
+		Collections.sort(locals);
+		
+		return locals;
 	}
 }

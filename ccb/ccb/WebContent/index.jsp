@@ -76,288 +76,9 @@
 			    			
 			    			<ol>
 				    			<li>
-				    				Preencha os dados de cada igreja. Cada linha abaixo será uma aba na planilha do seguro. Igrejas que estejam presentes no arquivo gerado pelo SIGA mas não estejam listadas abaixo, NÃO serão adicionadas à planilha do seguro: <br />
-				    				<table>
-					    				<tr>
-					    					<td>
-					    					
-					    					</td>
-					    					<td>
-					    						Código:
-					    					</td>
-					    					<td>
-					    						Bairro:
-					    					</td>
-					    					<td>
-					    						Administração:
-					    					</td>
-					    					<td>
-					    						CNPJ da Administração:
-					    					</td>
-					    					<td>
-					    						Nome do responsável:
-					    					</td>
-					    					<td>
-					    						Telefone do responsável:
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 1:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_1" value="22-2413"/>
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_1" value="Centro"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_1" value="Pedreira-SP"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_1" value="46.964.664/0001-71"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_1" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_1" />
-					    					</td>
-					    				</tr>
-					    				
-					    				<tr>
-					    					<td>
-					    						Bairro 2:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_2" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_2" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_2" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_2" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_2" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_2" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 3:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_3" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_3" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_3" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_3" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_3" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_3" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 4:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_4" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_4"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_4" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_4" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_4" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_4" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 5:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_5" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_5" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_5" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_5" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_5" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_5" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 6:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_6" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_6" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_6" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_6" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_6" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_6" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 7:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_7"/>
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_7" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_7" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_7" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_7" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_7" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 8:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_8" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_8" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_8" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_8" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_8" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_8" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 9:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_9" />
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_9" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_9" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_9" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_9" />
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_9" />
-					    					</td>
-					    				</tr>
-					    				<tr>
-					    					<td>
-					    						Bairro 10:
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_10"/>
-					    					</td>
-					    					
-					    					<td>
-					    						<input type="text" name="local_name_10"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="adm_10"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="cnpj_10"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_10"/>
-					    					</td>
-					    					<td>
-					    						<input type="text" name="resp_phone_10"/>
-					    					</td>
-					    				</tr>					    							    								    				
-				    				</table>
-				    			</li>
-				    			
-				    			<li>
 				    				Selecione o mês dos apontamentos: <br />
 				    				<select name="month">
+										<option value="month">Mês</option>
 										<option value="0">Janeiro</option>
 										<option value="1">Fevereiro</option>
 										<option value="2">Março</option>
@@ -383,6 +104,22 @@
 				    				<b>NOTA: </b> por recomendação da seguradora, voluntários com mais de 70 anos são excluídos da planilha, mesmo que estejam nos apontamentos do SIGA. <br />
 				    				<button name="send" value="send" type="submit">Gerar</button>
 				    			</li>			    			
+				    			<li>
+				    				O arquivo gerado será um arquivo compactado contendo uma ou mais planilhas do seguro. Cada planilha tem 10 abas, uma para cada localidade encontrada no arquivo
+				    				gerado pelo SIGA. Se o arquivo tiver mais de 10 localidades, mais de uma planilha será gerada.
+				    			</li>
+				    			<li>
+				    				Descompacte o arquivo baixado e:
+				    				<ol>
+				    					<li>
+				    						<b>Confira todos os dados cuidadosamente.</b>
+				    					</li>
+				    					<li>
+				    						Preencha os campos do cabeçalho de cada aba.
+			    						</li>
+				    				</ol>
+				    			</li>
+				    			
 			    			</ol>
 			    		</td>
 			    	</tr>			    

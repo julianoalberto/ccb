@@ -1,6 +1,6 @@
 package ccb.model;
 
-public class Local {
+public class Local implements Comparable<Local> {
 	private String code;
 	private String name;
 	private String cnpj;
@@ -103,6 +103,11 @@ public class Local {
 
 	public void setResponsiblePhone(String responsiblePhone) {
 		this.responsiblePhone = responsiblePhone;
+	}
+
+	@Override
+	public int compareTo(Local l) {
+		return this.getCode().compareTo(l.getCode());
 	}
 	
 	
