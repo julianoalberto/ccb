@@ -2,6 +2,8 @@ package ccb;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -18,6 +20,18 @@ public class XLSParser {
 	public static final int COLUMN_BIRTHDAY = 9;
 	public static final int COLUMN_CPF = 8;
 	public static final int COLUMN_DATE = 12;
+	
+	static
+	{
+		/*
+		 * This is a trick to fix an issue where years like 38 were being 
+		 * parsed as 2038 instead of 1938.
+		 * This behavior is not a bug and is documented in SimpleDateFormat.
+		 */
+		Calendar cal = GregorianCalendar.getInstance();
+		cal.set(1935, Calendar.DECEMBER, 31);
+		dateFormat.set2DigitYearStart(cal.getTime());
+	}
 	
 	private static Person parsePerson(HSSFRow row)
 	{
