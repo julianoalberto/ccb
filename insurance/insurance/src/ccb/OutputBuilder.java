@@ -95,6 +95,7 @@ public class OutputBuilder {
 	
 	public void buildCompressedSpreadSheetOuput(OutputStream outputStream) throws IOException, ParseException
 	{
+		FileInputStream modelo = new FileInputStream(new File(templateFileName));
 		ZipOutputStream out = new ZipOutputStream(outputStream);
 		
 		dao.load();
@@ -112,8 +113,7 @@ public class OutputBuilder {
 		{
 			ZipEntry e = new ZipEntry("Seguro_" + (i + 1) + ".xls");
 			out.putNextEntry(e);
-			
-			FileInputStream modelo = new FileInputStream(new File(templateFileName));
+						
 			HSSFWorkbook workbook = new HSSFWorkbook(modelo);
 			HashMap<Person, ArrayList<Record>> byPerson = null; 
 			

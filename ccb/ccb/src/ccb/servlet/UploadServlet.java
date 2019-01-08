@@ -2,6 +2,8 @@ package ccb.servlet;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
@@ -71,19 +73,31 @@ public class UploadServlet extends HttpServlet {
 			    response.setHeader("Content-Disposition", "attachment; filename=\"" + outputFileName + "\"");
 			    
 			    ServletOutputStream os = response.getOutputStream();
-		        OutputBuilder o = new OutputBuilder(fileContent, Integer.parseInt(month), TEMPLATE_FILE_NAME);
+			    
+			    OutputBuilder o = new OutputBuilder(fileContent, 
+			    		Integer.parseInt(month), 
+			    		request.getServletContext().getRealPath(TEMPLATE_FILE_NAME));
 				
 		        try {
 					o.buildCompressedSpreadSheetOuput(os);
+					os.flush();
+			        os.close();
 				} catch (Exception e) {
-					errors.add("Erro no arquivo de entrada: " + e.getMessage());
+					//errors.add("Erro no processamento: " + e.getMessage());
+					request.getSession().setAttribute("message", e.getMessage());
+					
+					StringWriter details = new StringWriter();
+					e.printStackTrace(new PrintWriter(details));
+					
+					request.getSession().setAttribute("details", details.toString());
+					
+					response.sendRedirect("system_error.jsp");
 					e.printStackTrace();
 				}
 				
 				fileContent.close();
 				
-			    os.flush();
-		        os.close();
+			    
 			}
 			else
 			{
@@ -97,7 +111,4 @@ public class UploadServlet extends HttpServlet {
 			request.getRequestDispatcher("errors.jsp").forward(request, response);
 		}
 	}
-	
-	
-
 }

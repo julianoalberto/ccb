@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="version" content="20171005_6">
 <title>CCB</title>
 </head>
 <body>
@@ -130,4 +129,9 @@
 </table>
 
 </body>
+<footer>
+	<small>
+		Versão: 20190108_1
+	</small>
+</footer>
 </html>
